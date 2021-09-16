@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+    margin: 1rem 13rem;
+    font-weight: bold;
+}
+
+p {
+    margin: 1rem 12rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    margin: 1rem 12rem;
+}
+
+form p {
+    margin: 1rem auto 0;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 0.25rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar {
+    padding: 2rem 12rem;
+    letter-spacing: 0.5rem;
+    word-spacing: 0.5rem;
+}
+
+.navbar .nav-item {
+    margin: 0 1rem;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.25rem;
+}
+
+.navbar-nav li a:hover {
+    color: #1ABC9C !important;
+}
+
+.heading {
+    margin: 1rem 12rem;
+    font-weight: 550;
+}
+
+.post h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem auto;
+}

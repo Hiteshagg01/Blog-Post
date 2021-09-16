@@ -1,0 +1,22 @@
+<%- include("partials/header") -%> 
+
+
+<div class="container-fluid">
+    <h1 class="heading">Home</h1>
+    <p><%= HOME %> </p>
+</div>
+<br>
+<div class="container-fluid">
+    <% for(let i = 0; i < TITLE.length; i++) { %> 
+        <h4><%= TITLE[i] %> </h4>
+        <p>
+            <%= JOURNAL[i].substring(0, 100) %>
+            <a href="/post/<%= TITLE[i] %> "> ... Read More</a>
+        </p>
+    <% } %> 
+</div>
+
+
+
+
+<%- include("partials/footer") -%> 

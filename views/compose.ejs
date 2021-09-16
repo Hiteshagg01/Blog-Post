@@ -1,0 +1,18 @@
+<%- include("partials/header") -%> 
+
+
+<div class="container-fluid">
+    <h1 class="heading">Compose</h1>
+    <form action="/compose" method="POST">
+        <p>Title</p>
+        <input type="text" name="title" autocomplete="off">
+        <p>Post</p>
+        <textarea name="journal" rows="10"></textarea>
+        <br>
+        <button type="submit" class="btn btn-primary">Publish</button>
+        <button href="/" class="btn btn-danger">Discard</button>
+    </form>
+</div>
+
+
+<%- include("partials/footer") -%> 
