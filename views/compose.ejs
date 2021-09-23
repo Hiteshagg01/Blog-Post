@@ -1,18 +1,29 @@
-<%- include("partials/header") -%> 
+<%- include("partials/header") -%>
 
 
-<div class="container-fluid">
-    <h1 class="heading">Compose</h1>
-    <form action="/compose" method="POST">
-        <p>Title</p>
-        <input type="text" name="title" autocomplete="off">
-        <p>Post</p>
-        <textarea name="journal" rows="10"></textarea>
-        <br>
-        <button type="submit" class="btn btn-primary">Publish</button>
-        <button href="/" class="btn btn-danger">Discard</button>
-    </form>
-</div>
+    <div class="container-fluid content">
+
+        <h1>Compose</h1>
+
+        <form action="/compose" method="POST">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <br>
+                <input type="text" name="title" autocomplete="off">
+
+            </div>
+            <div class="form-group">
+
+                <label for="journal">Journal</label>
+                <br>
+                <textarea name="journal" rows="10"></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary mt-3">Publish</button>
+            <button href="/" class="btn btn-danger mt-3">Discard</button>
+        </form>
+
+    </div>
 
 
-<%- include("partials/footer") -%> 
+    <%- include("partials/footer") -%>

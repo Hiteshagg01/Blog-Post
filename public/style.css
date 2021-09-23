@@ -1,29 +1,23 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h4 {
-    margin: 1rem 13rem;
-    font-weight: bold;
-}
-
-p {
-    margin: 1rem 12rem;
+    margin-bottom: 10rem;
 }
 
 a {
     text-decoration: none;
 }
 
-form {
-    margin: 1rem 12rem;
+button a {
+    text-decoration: none;
+    color: #fff;
 }
 
-form p {
-    margin: 1rem auto 0;
+button a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=password], textarea {
     width: 100%;
     padding: 0.25rem;
 }
@@ -31,6 +25,10 @@ input[type=text], textarea {
 footer {
     position: absolute;
     bottom: 0;
+    width: 100%;
+}
+
+.navbar .container-fluid {
     width: 100%;
 }
 
@@ -50,13 +48,25 @@ footer {
     color: #1ABC9C !important;
 }
 
-.heading {
-    margin: 1rem 12rem;
-    font-weight: 550;
+.container-fluid {
+    width: auto;
 }
 
-.post h3{
+.content {
+    margin: 4rem 12rem;
+}
+
+.post h3 {
     text-align: center;
     font-weight: bold;
     margin: 2rem auto;
+}
+
+.landing {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
 }

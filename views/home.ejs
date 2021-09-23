@@ -1,22 +1,28 @@
-<%- include("partials/header") -%> 
+<%- include("partials/header") -%>
 
 
-<div class="container-fluid">
-    <h1 class="heading">Home</h1>
-    <p><%= HOME %> </p>
-</div>
-<br>
-<div class="container-fluid">
-    <% for(let i = 0; i < TITLE.length; i++) { %> 
-        <h4><%= TITLE[i] %> </h4>
+    <div class="container-fluid content">
+        <br>
+        <h1 class="heading">Home</h1>
         <p>
-            <%= JOURNAL[i].substring(0, 100) %>
-            <a href="/post/<%= TITLE[i] %> "> ... Read More</a>
+            <%= HOME %>
         </p>
-    <% } %> 
-</div>
+    </div>
+    <br>
+    <div class="container-fluid content">
+
+        <% for(let i=0; i < TITLE.length; i++) { %>
+            <h4>
+                <%= TITLE[i].title %>
+            </h4>
+            <p>
+                <%= JOURNAL[i].journal.substring(0, 100) %>
+                    <a href="/post/<%= TITLE[i].title %> "> ... Read More</a>
+            </p>
+            <% } %>
+                <button class="btn btn-primary mt-3"><a href="/compose">Compose</a></button>
+                <button class="btn btn-primary mt-3"><a href="/logout">Log Out</a></button>
+    </div>
 
 
-
-
-<%- include("partials/footer") -%> 
+    <%- include("partials/footer") -%>
